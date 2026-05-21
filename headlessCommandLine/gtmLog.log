@@ -1,0 +1,88 @@
+[2026-05-20 18:06:40,090] DESKTOP-66HSA4G/INFO/locust.main: Starting Locust 2.44.0
+[2026-05-20 18:06:40,092] DESKTOP-66HSA4G/INFO/locust.main: Run time limit set to 10 seconds
+[2026-05-20 18:06:40,094] DESKTOP-66HSA4G/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2026-05-20 18:06:40,094] DESKTOP-66HSA4G/DEBUG/locust.runners: Ramping to {"MyLoadTest": 1} (1 total users)
+[2026-05-20 18:06:40,095] DESKTOP-66HSA4G/DEBUG/locust.runners: Spawning additional {"MyLoadTest": 1} ({"MyLoadTest": 0} already running)...
+[2026-05-20 18:06:40,095] DESKTOP-66HSA4G/DEBUG/locust.runners: 1 users spawned
+[2026-05-20 18:06:40,095] DESKTOP-66HSA4G/DEBUG/locust.runners: All users of class MyLoadTest spawned
+[2026-05-20 18:06:40,095] DESKTOP-66HSA4G/DEBUG/locust.runners: 0 users have been stopped, 1 still running
+[2026-05-20 18:06:40,095] DESKTOP-66HSA4G/INFO/locust.runners: All users spawned: {"MyLoadTest": 1} (1 total users)
+[2026-05-20 18:06:40,097] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: Starting new HTTPS connection (1): bughunters.io:443
+[2026-05-20 18:06:40,207] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:41,319] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:42,443] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:43,687] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:44,812] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:45,984] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:47,105] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:48,222] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:06:49,078] DESKTOP-66HSA4G/INFO/locust.main: --run-time limit reached, shutting down
+[2026-05-20 18:06:49,272] DESKTOP-66HSA4G/DEBUG/locust.runners: Stopping all users (called from C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\locust\runners.py:566)
+[2026-05-20 18:06:49,272] DESKTOP-66HSA4G/DEBUG/locust.runners: Stopping Greenlet-0
+[2026-05-20 18:06:49,274] DESKTOP-66HSA4G/DEBUG/locust.runners: 1 users have been stopped, 0 still running
+[2026-05-20 18:06:49,768] DESKTOP-66HSA4G/INFO/locust.main: writing html report to file: cmdlTest2Rpt
+[2026-05-20 18:06:49,773] DESKTOP-66HSA4G/DEBUG/locust.main: Running teardowns...
+[2026-05-20 18:06:49,773] DESKTOP-66HSA4G/INFO/locust.main: Shutting down (exit code 0)
+[2026-05-20 18:06:49,773] DESKTOP-66HSA4G/DEBUG/locust.main: Cleaning up runner...
+[2026-05-20 18:19:03,246] DESKTOP-66HSA4G/INFO/locust.main: Starting Locust 2.44.0
+[2026-05-20 18:19:03,248] DESKTOP-66HSA4G/INFO/locust.main: Starting web interface at http://localhost:8089, press enter to open your default browser.
+[2026-05-20 18:19:03,374] DESKTOP-66HSA4G/CRITICAL/locust.web: Unhandled exception in greenlet: <Greenlet at 0x1720fd6d760: <bound method WebUI.start_server of <locust.web.WebUI object at 0x000001720FD71A90>>>
+Traceback (most recent call last):
+  File "src/gevent/greenlet.py", line 900, in gevent._gevent_cgreenlet.Greenlet.run
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\locust\web.py", line 632, in start_server
+    self.server.serve_forever()
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\baseserver.py", line 401, in serve_forever
+    self.start()
+    ^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\baseserver.py", line 339, in start
+    self.init_socket()
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\pywsgi.py", line 1672, in init_socket
+    StreamServer.init_socket(self)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\server.py", line 173, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+    ^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\server.py", line 185, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\server.py", line 264, in _tcp_listener
+    sock.bind(address)
+    ^^^^^^^^^^^^^^^
+  File "C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\gevent\_socketcommon.py", line 543, in bind
+    return self._sock.bind(address)
+    ^^^^^^^^^^^^^^^
+OSError: [WinError 10048] Only one usage of each socket address (protocol/network address/port) is normally permitted: ('', 8089)
+[2026-05-20 18:19:03,455] DESKTOP-66HSA4G/INFO/locust.main: writing html report to file: cmdlTest2Rpt
+[2026-05-20 18:19:03,460] DESKTOP-66HSA4G/DEBUG/locust.main: Running teardowns...
+[2026-05-20 18:19:03,460] DESKTOP-66HSA4G/INFO/locust.main: Shutting down (exit code 2)
+[2026-05-20 18:19:03,460] DESKTOP-66HSA4G/DEBUG/locust.main: Cleaning up runner...
+[2026-05-20 18:19:03,634] DESKTOP-66HSA4G/DEBUG/locust.runners: Stopping all users (called from C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\locust\runners.py:566)
+[2026-05-20 18:19:03,634] DESKTOP-66HSA4G/DEBUG/locust.runners: 0 users have been stopped, 0 still running
+[2026-05-20 18:19:34,167] DESKTOP-66HSA4G/INFO/locust.main: Starting Locust 2.44.0
+[2026-05-20 18:19:34,168] DESKTOP-66HSA4G/INFO/locust.main: Run time limit set to 10 seconds
+[2026-05-20 18:19:34,171] DESKTOP-66HSA4G/INFO/locust.runners: Ramping to 1 users at a rate of 1.00 per second
+[2026-05-20 18:19:34,171] DESKTOP-66HSA4G/DEBUG/locust.runners: Ramping to {"MyLoadTest": 1} (1 total users)
+[2026-05-20 18:19:34,171] DESKTOP-66HSA4G/DEBUG/locust.runners: Spawning additional {"MyLoadTest": 1} ({"MyLoadTest": 0} already running)...
+[2026-05-20 18:19:34,172] DESKTOP-66HSA4G/DEBUG/locust.runners: 1 users spawned
+[2026-05-20 18:19:34,172] DESKTOP-66HSA4G/DEBUG/locust.runners: All users of class MyLoadTest spawned
+[2026-05-20 18:19:34,172] DESKTOP-66HSA4G/DEBUG/locust.runners: 0 users have been stopped, 1 still running
+[2026-05-20 18:19:34,172] DESKTOP-66HSA4G/INFO/locust.runners: All users spawned: {"MyLoadTest": 1} (1 total users)
+[2026-05-20 18:19:34,174] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: Starting new HTTPS connection (1): bughunters.io:443
+[2026-05-20 18:19:34,398] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:35,584] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:36,731] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:37,879] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:38,987] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:40,153] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:41,280] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:42,405] DESKTOP-66HSA4G/DEBUG/urllib3.connectionpool: https://bughunters.io:443 "GET / HTTP/1.1" 200 None
+[2026-05-20 18:19:43,148] DESKTOP-66HSA4G/INFO/locust.main: --run-time limit reached, shutting down
+[2026-05-20 18:19:43,334] DESKTOP-66HSA4G/DEBUG/locust.runners: Stopping all users (called from C:\Users\user97\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\locust\runners.py:566)
+[2026-05-20 18:19:43,335] DESKTOP-66HSA4G/DEBUG/locust.runners: Stopping Greenlet-0
+[2026-05-20 18:19:43,336] DESKTOP-66HSA4G/DEBUG/locust.runners: 1 users have been stopped, 0 still running
+[2026-05-20 18:19:43,410] DESKTOP-66HSA4G/INFO/locust.main: writing html report to file: cmdlTest2Rpt
+[2026-05-20 18:19:43,415] DESKTOP-66HSA4G/DEBUG/locust.main: Running teardowns...
+[2026-05-20 18:19:43,415] DESKTOP-66HSA4G/INFO/locust.main: Shutting down (exit code 0)
+[2026-05-20 18:19:43,415] DESKTOP-66HSA4G/DEBUG/locust.main: Cleaning up runner...
